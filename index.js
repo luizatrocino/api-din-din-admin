@@ -3,6 +3,7 @@ const cors = require("cors")
 const app = express()
 const routes = require("./routes")
 
+app.use(express.json()) //habilita o express a receber json
 app.use(cors())
 app.use(routes)
 
